@@ -6,7 +6,7 @@ import {defineConfig} from 'vite';
 export default defineConfig(() => {
   return {
     // Εδώ ορίζουμε το base path για το GitHub Pages
-    base: '/my-website/',
+    base: './my-website/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {

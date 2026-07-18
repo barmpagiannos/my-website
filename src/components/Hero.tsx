@@ -67,7 +67,7 @@ export default function Hero() {
           <div className="absolute inset-0 rounded-full border-4 border-white dark:border-slate-800 shadow-xl overflow-hidden bg-slate-200 dark:bg-slate-800">
             {/* Note: The user can upload their profile picture to the public folder as 'profile.jpg' */}
             <img 
-              src="/profile.jpg" 
+              src="./profile.jpg" 
               alt="Vasileios Barmpagiannos" 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
