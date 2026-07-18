@@ -1,0 +1,6 @@
+{
+  "name": "Vasileios Barmpagiannos Portfolio",
+  "description": "Portfolio website for Vasileios Barmpagiannos, an Electrical and Computer Engineer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
