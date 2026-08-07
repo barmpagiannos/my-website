@@ -74,25 +74,26 @@ export default function App() {
         <Skills />
         
         {/* --- ΕΔΩ ΠΡΟΣΘΕΣΑΜΕ ΤΟ WIDGET ΣΟΥ --- */}
-        <section id="booking" className="scroll-mt-24">
-          <div className="mb-8">
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">Book an Appointment</h2>
-            <p className="text-slate-600 dark:text-slate-400">
-              Schedule a visit securely using the booking widget below.
-            </p>
-          </div>
-          
-          <div className="w-full bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-2 md:p-4">
-             <iframe 
-               src="https://ais-dev-wpb6a4yfrmhs5n5uqlinlc-6030026253.europe-west1.run.app?doctorId=VRi05iRGazN2DsmCVpKQIKPtqsv1" 
-               width="100%" 
-               height="800px" 
-               frameBorder="0" 
-               style={{ border: 'none', borderRadius: '12px', overflow: 'hidden', background: 'transparent' }}
-               title="Patient Booking Widget"
-             ></iframe>
-          </div>
-        </section>
+<section id="booking" className="scroll-mt-24">
+  <div className="mb-8">
+    <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">Book an Appointment</h2>
+    <p className="text-slate-600 dark:text-slate-400">
+      Schedule a visit securely using the booking widget below.
+    </p>
+  </div>
+  
+  <div className="w-full bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-2 md:p-4">
+     {/* ΕΔΩ ΑΛΛΑΞΑΜΕ ΤΟ SRC ΓΙΑ ΝΑ ΔΕΙΧΝΕΙ ΣΤΟ RENDER */}
+     <iframe 
+       src="https://doctor-booking-app-nv2d.onrender.com?doctorId=VRi05iRGazN2DsmCVpKQIKPtqsv1" 
+       width="100%" 
+       height="800px" 
+       frameBorder="0" 
+       style={{ border: 'none', borderRadius: '12px', overflow: 'hidden', background: 'transparent' }}
+       title="Patient Booking Widget"
+     ></iframe>
+  </div>
+</section>
         {/* ----------------------------------- */}
         
       </main>
