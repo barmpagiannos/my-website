@@ -26,7 +26,7 @@ export default function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'experience', 'projects', 'skills'];
+      const sections = ['about', 'experience', 'projects', 'skills', 'booking'];
       const scrollPosition = window.scrollY + 150;
 
       let currentSection = "";
@@ -53,6 +53,8 @@ export default function App() {
             <a href="#experience" className={`hidden md:block text-sm font-medium transition-colors ${activeSection === 'experience' ? 'text-blue-600 dark:text-blue-400' : 'text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400'}`}>Experience</a>
             <a href="#projects" className={`hidden md:block text-sm font-medium transition-colors ${activeSection === 'projects' ? 'text-blue-600 dark:text-blue-400' : 'text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400'}`}>Projects</a>
             <a href="#skills" className={`hidden md:block text-sm font-medium transition-colors ${activeSection === 'skills' ? 'text-blue-600 dark:text-blue-400' : 'text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400'}`}>Skills</a>
+            <a href="#booking" className={`hidden md:block text-sm font-medium transition-colors ${activeSection === 'booking' ? 'text-blue-600 dark:text-blue-400' : 'text-slate-600 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-400'}`}>Book Appointment</a>
+            
             <button
               onClick={() => setDarkMode(!darkMode)}
               className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 transition-colors"
@@ -70,6 +72,29 @@ export default function App() {
         <Experience />
         <Projects />
         <Skills />
+        
+        {/* --- ΕΔΩ ΠΡΟΣΘΕΣΑΜΕ ΤΟ WIDGET ΣΟΥ --- */}
+        <section id="booking" className="scroll-mt-24">
+          <div className="mb-8">
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">Book an Appointment</h2>
+            <p className="text-slate-600 dark:text-slate-400">
+              Schedule a visit securely using the booking widget below.
+            </p>
+          </div>
+          
+          <div className="w-full bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-2 md:p-4">
+             <iframe 
+               src="https://ais-dev-wpb6a4yfrmhs5n5uqlinlc-6030026253.europe-west1.run.app?doctorId=VRi05iRGazN2DsmCVpKQIKPtqsv1" 
+               width="100%" 
+               height="800px" 
+               frameBorder="0" 
+               style={{ border: 'none', borderRadius: '12px', overflow: 'hidden', background: 'transparent' }}
+               title="Patient Booking Widget"
+             ></iframe>
+          </div>
+        </section>
+        {/* ----------------------------------- */}
+        
       </main>
 
       <footer className="border-t border-slate-200 dark:border-slate-800 mt-24 py-12 text-center transition-colors duration-300">
