@@ -50,12 +50,11 @@ To get a local copy up and running, follow these simple steps.
 
 ## Deployment (GitHub Pages)
 
-This portfolio is configured to be easily deployed to GitHub Pages via GitHub Actions.
+Deployment is handled by `.github/workflows/deploy.yml`. Every push to `main` builds the Vite app and publishes `dist` to GitHub Pages; the workflow can also be started manually from the Actions tab.
 
-1. Ensure your `vite.config.ts` has the `base: "./"` property set.
-2. Go to your repository **Settings > Pages**.
-3. Under **Build and deployment**, change the **Source** to **GitHub Actions**.
-4. Create a `.github/workflows/deploy.yml` workflow file. GitHub will automatically build and deploy the site upon every push to the `main` branch.
+For the first deployment, open **Settings > Pages** and set **Source** to **GitHub Actions**. The site will be available at:
+
+`https://barmpagiannos.github.io/my-website/`
 
 ## License
 
